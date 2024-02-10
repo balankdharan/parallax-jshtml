@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Parallax site</title>
+  </head>
+  <body>
+    <section id="first">
+      <img src="sky.png" alt="sky" id="sky" />
+      <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <!-- <li><a href="#">About </a></li>
+          <li><a href="#">work</a></li>
+          <li><a href="#">contact</a></li> -->
+        </ul>
+      </header>
+    </section>
+    <section id="photo">
+      <div>
+        <img src="moon.png" alt="moon" id="moon" />
+      </div>
+      <h2 id="text">Beach night</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="beach.png" alt="beach" id="beach" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>More Info</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam
+        magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
+        qui quam veniam veritatis illo! Autem ad quaerat perspiciatis
+        voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Odio quisquam magnam vero iure explicabo asperiores, assumenda a totam
+        ab expedita, qui quam veniam veritatis illo! Autem ad quaerat
+        perspiciatis voluptatum.<br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam
+        magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
+        qui quam veniam veritatis illo! qui quam veniam veritatis illo! Autem ad
+        quaerat perspiciatis voluptatum. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Odio quisquam magnam vero iure explicabo asperiores,
+        assumenda a totam ab expedita, qui quam veniam veritatis illo! Autem ad
+        quaeratAutem ad quaerat perspiciatis voluptatum. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Odio quisquam magnam vero iure
+        explicabo asperiores, assumenda a totam ab expedita, qui quam veniam
+        veritatis illo! Autem ad quaerat perspiciatis voluptatum.<br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam
+        magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
+        qui quam veniam veritatis illo! Autem ad quaerat perspiciatis
+        voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Odio quisquam magnam vero iure explicabo asperiores, assumenda a totam
+        ab expedita, qui quam veniam veritatis illo! Autem ad quaerat
+        perspiciatis voluptatum.<br /><br />
+        magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
+        qui quam veniam veritatis illo! Autem ad quaerat perspiciatis
+        voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Odio quisquam magnam vero iure explicabo asperiores, assumenda a totam
+        ab expedita, qui quam veniam veritatis illo! Autem ad quaerat
+        perspiciatis voluptatum.<br /><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam
+        magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
+        qui quam veniam veritatis illo! Autem ad quaerat perspiciatis
+        voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+        quisquam magnam vero iure explicabo asperiores, assumenda a totam ab
+        expedita, qui quam veniam veritatis illo! Autem ad quaerat perspiciatis
+        voluptatum. Lorem ipsum dolor sit amet consec Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Odio quisquam magnam vero iure explicabo
+        asperiores, assumenda a totam ab expedita, qui quam veniam veritatis
+        illo! Autem ad quaerat perspiciatis voluptatum.<br /><br />
+      </p>
+    </div>
+    <script>
+      let sky = document.getElementById("sky");
+      let moon = document.getElementById("moon");
+      let beach = document.getElementById("beach");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        sky.style.top = value * 0.5 + "px";
+        moon.style.top = value * 1.25 + "px";
+        text.style.marginRight = value + "px";
+        btn.style.marginLeft = value + "px";
+        if (value > 50) {
+          btn.style.zIndex = 0;
+        } else {
+          btn.style.zIndex = 1000;
+        }
+        // beach.style.down = value * 0.25 + "px";
+      });
+    </script>
+  </body>
+</html>
