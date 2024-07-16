@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Parallax site</title>
   </head>
@@ -12,7 +16,7 @@
       <header>
         <a href="#" class="logo">Logo</a>
         <ul>
-          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#first" class="active">Home</a></li>
           <!-- <li><a href="#">About </a></li>
           <li><a href="#">work</a></li>
           <li><a href="#">contact</a></li> -->
@@ -27,8 +31,84 @@
       <a href="#sec" id="btn">Explore</a>
       <img src="beach.png" alt="beach" id="beach" />
     </section>
+    <div class="secondary">
+      <div>
+        <h2 class="title">Check out More beach</h2>
+      </div>
+      <div class="container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img
+                src="https://picsum.photos/200"
+                alt="User Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Random beach</h2>
+              <p class="user-profession">located in lorem ipsum</p>
+              <button class="message-button">explore</button>
+            </div>
+            <div class="card-item swiper-slide">
+              <img
+                src="https://picsum.photos/200"
+                alt="User Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Random beach</h2>
+              <p class="user-profession">located in lorem ipsum</p>
+              <button class="message-button">explore</button>
+            </div>
+            <div class="card-item swiper-slide">
+              <img
+                src="https://picsum.photos/200"
+                alt="User Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Random beach</h2>
+              <p class="user-profession">located in lorem ipsum</p>
+              <button class="message-button">explore</button>
+            </div>
+            <div class="card-item swiper-slide">
+              <img
+                src="https://picsum.photos/200"
+                alt="User Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Random beach</h2>
+              <p class="user-profession">located in lorem ipsum</p>
+              <button class="message-button">explore</button>
+            </div>
+            <div class="card-item swiper-slide">
+              <img
+                src="https://picsum.photos/200"
+                alt="User Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Random beach</h2>
+              <p class="user-profession">located in lorem ipsum</p>
+              <button class="message-button">explore</button>
+            </div>
+            <div class="card-item swiper-slide">
+              <img
+                src="https://picsum.photos/200"
+                alt="User Image"
+                class="user-image"
+              />
+              <h2 class="user-name">Random beach</h2>
+              <p class="user-profession">located in lorem ipsum</p>
+              <button class="message-button">explore</button>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
     <div class="sec" id="sec">
       <h2>More Info</h2>
+
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam
         magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
@@ -36,7 +116,12 @@
         voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Odio quisquam magnam vero iure explicabo asperiores, assumenda a totam
         ab expedita, qui quam veniam veritatis illo! Autem ad quaerat
-        perspiciatis voluptatum.<br /><br />
+        perspiciatis voluptatum.
+      </p>
+
+      <br /><br />
+
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam
         magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
         qui quam veniam veritatis illo! qui quam veniam veritatis illo! Autem ad
@@ -46,20 +131,34 @@
         quaeratAutem ad quaerat perspiciatis voluptatum. Lorem ipsum dolor sit
         amet consectetur adipisicing elit. Odio quisquam magnam vero iure
         explicabo asperiores, assumenda a totam ab expedita, qui quam veniam
-        veritatis illo! Autem ad quaerat perspiciatis voluptatum.<br /><br />
+        veritatis illo! Autem ad quaerat perspiciatis voluptatum.
+      </p>
+      <br /><br />
+
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam
         magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
         qui quam veniam veritatis illo! Autem ad quaerat perspiciatis
         voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Odio quisquam magnam vero iure explicabo asperiores, assumenda a totam
         ab expedita, qui quam veniam veritatis illo! Autem ad quaerat
-        perspiciatis voluptatum.<br /><br />
+        perspiciatis voluptatum.
+      </p>
+
+      <br /><br />
+
+      <p>
         magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
         qui quam veniam veritatis illo! Autem ad quaerat perspiciatis
         voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Odio quisquam magnam vero iure explicabo asperiores, assumenda a totam
         ab expedita, qui quam veniam veritatis illo! Autem ad quaerat
-        perspiciatis voluptatum.<br /><br />
+        perspiciatis voluptatum.
+      </p>
+
+      <br /><br />
+
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quisquam
         magnam vero iure explicabo asperiores, assumenda a totam ab expedita,
         qui quam veniam veritatis illo! Autem ad quaerat perspiciatis
@@ -69,10 +168,12 @@
         voluptatum. Lorem ipsum dolor sit amet consec Lorem ipsum dolor sit amet
         consectetur adipisicing elit. Odio quisquam magnam vero iure explicabo
         asperiores, assumenda a totam ab expedita, qui quam veniam veritatis
-        illo! Autem ad quaerat perspiciatis voluptatum.<br /><br />
+        illo! Autem ad quaerat perspiciatis voluptatum.
       </p>
+
+      <br /><br />
     </div>
-    <script>
+    <!-- <script>
       let sky = document.getElementById("sky");
       let moon = document.getElementById("moon");
       let beach = document.getElementById("beach");
@@ -91,6 +192,8 @@
         }
         // beach.style.down = value * 0.25 + "px";
       });
-    </script>
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
