@@ -3,12 +3,14 @@ let moon = document.getElementById("moon");
 let beach = document.getElementById("beach");
 let text = document.getElementById("text");
 let btn = document.getElementById("btn");
+let title = document.getElementById("title");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
   sky.style.top = value * 0.5 + "px";
   moon.style.top = value * 1.25 + "px";
   text.style.marginRight = value + "px";
+  title.style.marginBottom = value * 0.1 + "px";
   btn.style.marginLeft = value + "px";
   btn.style.zIndex = value > 50 ? 0 : 1000;
 });

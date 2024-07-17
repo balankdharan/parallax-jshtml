@@ -33,7 +33,7 @@
     </section>
     <div class="secondary">
       <div>
-        <h2 class="title">Check out More beach</h2>
+        <h2 class="title" id="title">Check out More beach</h2>
       </div>
       <div class="container swiper">
         <div class="slider-wrapper">
@@ -173,6 +173,10 @@
 
       <br /><br />
     </div>
+
+    <footer>
+      <p>&copy; Copyright <span id="year"></span></p>
+    </footer>
     <!-- <script>
       let sky = document.getElementById("sky");
       let moon = document.getElementById("moon");
@@ -195,5 +199,8 @@
     </script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

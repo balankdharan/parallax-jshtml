@@ -148,6 +148,7 @@ section img#beach {
   background: #164a8b no-repeat center;
   padding-top: 100px;
   position: relative;
+  z-index: 10;
 }
 .title {
   font-size: 3.5em;
@@ -228,4 +229,17 @@ section img#beach {
   .slider-wrapper .swiper-slide-button {
     display: none;
   }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Adjust height as needed */
+  background-color: #164a8b; /* Optional: background color */
+  position: fixed;
+  border: 1px solid #4658ff;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }
